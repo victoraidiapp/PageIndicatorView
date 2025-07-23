@@ -1,1 +1,1 @@
-include ':sample', ':pageindicatorview'
+include ':pageindicatorview'

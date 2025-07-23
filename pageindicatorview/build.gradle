@@ -62,7 +62,7 @@ publishing {
             }
             groupId = 'com.github.victoraidiapp' // Reemplaza con tu usuario real
             artifactId = 'PageIndicatorView'
-            version = '1.0.4'
+            version = '1.0.5'
         }
     }
 }

@@ -54,6 +54,19 @@ dependencies {
     implementation 'androidx.viewpager:viewpager:1.0.0'
 }
 
+publishing {
+    publications {
+        release(MavenPublication) {
+            afterEvaluate {
+                from components.findByName("release") ?: components.findByName("default")
+            }
+            groupId = 'com.github.victoraidiapp' // Reemplaza con tu usuario real
+            artifactId = 'PageIndicatorView'
+            version = '1.0.4'
+        }
+    }
+}
+
 allprojects {
     tasks.withType(Javadoc) {
         options.addStringOption('Xdoclint:none', '-quiet')
